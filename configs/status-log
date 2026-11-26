@@ -1,0 +1,17 @@
+/home/kabi/logs/status.log {
+    weekly
+    rotate 4
+    compress
+    delaycompress
+    missingok
+    su kabi kabi
+    notifempty
+    create 0644 kabi kabi
+}
+
+
+
+
+
+
+

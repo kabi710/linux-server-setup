@@ -1,0 +1,15 @@
+[Unit]
+Description=Hello Flask Service
+After=network.target
+
+[Service]
+User=kabi
+WorkingDirectory=/home/kabi/apps/hello-service
+ExecStart=/home/kabi/apps/hello-service/venv/bin/python3 /home/kabi/apps/hello-service/app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
