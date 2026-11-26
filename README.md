@@ -5,6 +5,7 @@ A hands-on cloud engineering project demonstrating Linux server administration, 
 
 ## Architecture
 
+```text
 Windows PC
     |
     | SSH (key-based authentication)
@@ -26,6 +27,7 @@ AWS EC2 Instance (Ubuntu Linux)
             +-- Automated Backups
             +-- Log Analysis
             +-- Application Deployment
+```
 
 ## Technologies Used
 
@@ -104,3 +106,33 @@ https://github.com/kabi710/hello-service
 - Add automated tests to the deployment workflow.
 - Implement a CI/CD pipeline using GitHub Actions.
 - Add more comprehensive monitoring and alerting.
+
+
+## Project Screenshots
+
+The following screenshots document the server configuration, security controls, and automation workflows implemented throughout the project.
+
+### SSH Hardening
+![SSH key authentication and security configuration](screenshots/phase2-ssh-hardening.png)
+
+### UFW Firewall
+![UFW firewall configuration](screenshots/phase3-firewall.png)
+
+### systemd Service
+![Flask application managed by systemd](screenshots/phase4-systemd.png)
+
+### Cron Monitoring
+![Scheduled server monitoring using cron](screenshots/phase5-cron.png)
+
+### Nginx Reverse Proxy
+![Nginx reverse proxy configuration](screenshots/phase6-nginx.png)
+
+### Backup Automation
+![Timestamped backups and retention pruning](screenshots/phase8-backup.png)
+
+### Log Analysis
+![Server status and Nginx log analysis](screenshots/phase8-log-parser.png)
+
+### Deployment Automation
+![Automated Flask deployment and HTTP health check](screenshots/phase8-deployment.png)
+
